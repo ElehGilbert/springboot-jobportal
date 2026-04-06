@@ -20,6 +20,3 @@ VALUES
     ('CloudSphere', 'https://logos.com/cloudsphere.png', 'Technology', 'Large', 4.7, 'Global', 2009, 'Cloud computing and SaaS solutions.', 2500, 'https://cloudsphere.com', 'admin'),
     ('TravelEase', 'https://logos.com/travelease.png', 'Travel', 'Small', 4.0, 'Cameroon', 2021, 'Travel agency offering affordable packages.', 30, 'https://travelease.cm', 'admin'),
     ('SmartPay Fintech', 'https://logos.com/smartpay.png', 'Finance', 'Medium', 4.5, 'Africa', 2018, 'Mobile payments and fintech solutions.', 350, 'https://smartpay.africa', 'admin');
-
-
-
