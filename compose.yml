@@ -1,7 +1,7 @@
 services:
   dbservice:
     image: mysql:latest
-    container_name: springboot jobportaldb
+    container_name: springbootjobportaldb
     ports:
       - "3306:3306"
     environment:

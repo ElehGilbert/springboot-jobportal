@@ -1,4 +1,4 @@
-package com.dreamsiteco.jobportal.service;
+package com.dreamsiteco.jobportal.company.service;
 
 import com.dreamsiteco.jobportal.dto.CompanyDto;
 import com.dreamsiteco.jobportal.entity.Company;

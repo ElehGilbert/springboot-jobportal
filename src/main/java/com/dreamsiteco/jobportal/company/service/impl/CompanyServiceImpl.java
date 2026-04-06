@@ -1,11 +1,10 @@
-package com.dreamsiteco.jobportal.service.impl;
+package com.dreamsiteco.jobportal.company.service.impl;
 
 import com.dreamsiteco.jobportal.dto.CompanyDto;
 import com.dreamsiteco.jobportal.entity.Company;
 import com.dreamsiteco.jobportal.repository.CompanyRepository;
-import com.dreamsiteco.jobportal.service.ICompanyService;
+import com.dreamsiteco.jobportal.company.service.ICompanyService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
