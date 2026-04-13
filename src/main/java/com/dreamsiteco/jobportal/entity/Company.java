@@ -10,7 +10,7 @@ import java.time.Instant;
 @Entity
 @Table(name = "COMPANIES")
 @Getter  @Setter //This annotation is from the Lombok Library helps generate the Getter and setter for my Entity columns
-public class Company
+public class Company extends BaseEntity
 {
     @Id //Since this is our primary key
     @GeneratedValue(strategy = GenerationType.IDENTITY)//Using IDENTITY from the GenerationType enum tells JPA to generate primary key value
@@ -48,15 +48,5 @@ public class Company
     @Column(name = "WEBSITE", nullable = false, length = 1000)
     private String website;
 
-    @Column(name = "CREATED_AT", nullable = false)
-    private Instant CreatedAt;
 
-    @Column(name = "CREATED_BY" , nullable = false, length = 50)
-    private String  createdBy;
-
-    @Column(name = "updated_at")
-    private Instant UpdatedAt;
-
-    @Column(name = "UPDATED_BY",length = 50)
-    private String UpdatedBy;
 }

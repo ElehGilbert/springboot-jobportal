@@ -42,9 +42,11 @@ public class ContactServiceImpl  implements IContactService {
         BeanUtils.copyProperties(contactRequestDto, contact);// THIS HELPS US AUTO MAP STUFFS ASLONG AS OUR NAMINGS FOR THE DTO AND ENTITY MATCH
 
         //Since this other values do not exist in the DTO i have to map them manually
-        contact.setCreatedAt(Instant.now());
-        contact.setCreatedBy("system");
-//        contact.setUpdatedAt(Instant.now());
+
+        /// <summary>Commented all of this out because its now handled by ou Auditing class (logic)</summary>
+//        contact.setCreatedAt(Instant.now());
+//        contact.setCreatedBy("system");
+//       contact.setUpdatedAt(Instant.now());
         contact.setStatus("NEW");
 
 

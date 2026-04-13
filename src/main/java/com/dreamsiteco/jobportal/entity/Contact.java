@@ -12,7 +12,7 @@ import java.time.Instant;
 @Table(name ="CONTACTS")
 @Getter
 @Setter
-public class Contact {
+public class Contact  extends BaseEntity{
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
     @Column(name ="ID",nullable = false)
@@ -41,13 +41,16 @@ public class Contact {
     @Column(name = "STATUS",nullable = false, length = 50)
     private String status;
 
-    @Column(name = "CREATED_AT",nullable = false)
-    private Instant createdAt;
 
-    @Column(name = "CREATED_BY",nullable = false,length = 50)
-    private String createdBy;
-
-    @Column(name = "UPDATED_AT")
-    private Instant updatedAt;
+    /// <summary>Commenting this out because I decided to create a BaseEntity class so I don't have to repeat my self (DRY)</summary>
+//
+//    @Column(name = "CREATED_AT",nullable = false)
+//    private Instant createdAt;
+//
+//    @Column(name = "CREATED_BY",nullable = false,length = 50)
+//    private String createdBy;
+//
+//    @Column(name = "UPDATED_AT")
+//    private Instant updatedAt;
 
 }
